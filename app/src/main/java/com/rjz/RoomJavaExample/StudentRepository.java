@@ -24,9 +24,8 @@ public class StudentRepository {
     public void insert(Student s) {
         studentDao.insert(s);
         // TODO NOTE for .allowMainThreadQueries() 2B of 2B
-        // if not want to make query on main thread then
-        // remove this line. you have to use Asynktask for it.
-
+        // if "not" want to make query on main thread then comment this line.
+        // and then you can use AsyncTask for it.
 //        new insertAsyncTask(studentDao).execute(s);
     }
 

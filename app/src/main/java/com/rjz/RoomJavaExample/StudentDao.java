@@ -21,7 +21,7 @@ public interface StudentDao {
     Student findStudent(int id);
 
     @Query("Delete from student_table where id= :id")
-    int delStudent(int id);
+    int delStudent(int id); // it will returns how many records are deleted.
 
     @Query("Select * from student_table")
     LiveData<List<Student>> getAllStudent();
